@@ -1,0 +1,10 @@
+agents:
+  - name: coder
+    model: distilgpt2
+    prompt_prefix: "Write Python code to"
+  - name: reviewer
+    model: distilgpt2
+    prompt_prefix: "Review the following Python code and suggest improvements:"
+workflow:
+  - agent: coder
+  - agent: reviewer
